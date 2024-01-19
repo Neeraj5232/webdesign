@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .header {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            background-color: lightgrey;
+            margin-bottom: 10px;
+        }
+
+        .header a {
+
+            color: black;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .nav2 a {
+            text-decoration: none;
+            color: black;
+            padding: 2px 8px;
+            font-size: 20px;
+        }
+
+        .nav2 a:hover {
+            background-color: rgb(240, 236, 236);
+            border-radius: 10px;
+
+        }
+        .nav3 a{
+            text-decoration: none;
+            padding-right: 30px;
+            color: black;
+        }
+        .nav3 a:hover{
+            color: grey;
+        }
+
+        .search {
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            width: 70vw;
+            margin-left: 210px;
+            border: 1px solid black;
+            border-radius: 40px;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .search a {
+            padding: 10px 40px;
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+
+        }
+
+        .search a:hover {
+            background-color: rgb(232, 231, 231);
+            border-radius: 40px;
+        }
+
+        .bold {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .iconbar {
+            display: flex;
+            font-size: 13px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+
+        }
+
+        .icon {
+            padding: 5px 20px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        .icon img {
+            height: 25px;
+
+        }
+
+        .btn {
+            padding: 8px 5px;
+            border: 1px solid lightgray;
+        }
+
+        .row a {
+            color: black;
+        }
+        .row a p{
+            color: black;
+            padding-top: 5px;
+            padding-bottom: 2px;
+        }
+        .showmore{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .showmore button{
+            background-color: black;
+            color: white;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .footer{
+            background-color: rgb(235, 235, 235);
+        }
+        .footer hr{
+            width: 95%;
+            margin-left: 20px;
+        }
+        .footer h3{
+           margin-left: 20px;
+           margin-bottom: 10px;
+           padding-top: 20px;
+        }
+        .items a{
+           text-decoration: none;
+           padding: 5px 20px;   
+        }
+        .items a:hover{
+            color: lightseagreen;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-left: 20px;
+        }
+        .grid p{
+            margin-top: 0px;
+        }
+        .copyright{
+            padding: 10px 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header"><a href="#">Learn about Guest Favourites, the most loved homes on Airbnb
+        </a></div>
+    <div class="navbar">
+        <div class="nav1">
+            <img src="./img2.jpg" alt="" height="40px">
+        </div>
+        <div class="nav2">
+            <a href="#">Stays</a>
+            <a href="#">Experiences</a>
+            <a href="#">Online Experiences</a>
+        </div>
+        <div class="nav3">
+            <a href="#">Airbnb your home</a>
+        </div>
+    </div>
+    <div class="search">
+        <a href="">
+            <p class="bold">Where</p>
+            <p>Search destination</p>
+        </a>
+
+        <a href="">
+            <p class="bold">Check in</p>
+            <p>Add dates</p>
+        </a>
+        <a href="">
+            <p class="bold">Check out</p>
+            <p>Add dates</p>
+        </a>
+        <a href="">
+            <p class="bold">Who</p>
+            <p>Add guests</p>
+
+        </a>
+        <a href="">
+            <img style="height: 40px; border-radius: 40px;" src="./search.jpg" alt="">
+        </a>
+    </div>
+    <hr>
+    <div class="iconbar">
+        <div class="icon">
+            <img src="./icon1.jpg" alt="">
+            <p>Amazing view</p>
+        </div>
+        <div class="icon">
+            <img src="./icon2.jpg" alt="">
+            <p>Tiny homes</p>
+        </div>
+        <div class="icon">
+            <img src="./icon3.jpg" alt="">
+            <p>Historical homes</p>
+        </div>
+        <div class="icon">
+            <img src="./icon4.jpg" alt="">
+            <p>OMG!</p>
+        </div>
+        <div class="icon">
+            <img src="./icon5.jpg" alt="">
+            <p>Mansions</p>
+        </div>
+        <div class="icon">
+            <img src="./icon6.jpg" alt="">
+            <p>Top of the world</p>
+        </div>
+        <div class="icon">
+            <img src="./icon7.jpg" alt="">
+            <p>Farms</p>
+        </div>
+        <div class="icon">
+            <img src="./icon8.jpg" alt="">
+            <p>Amazing pools</p>
+        </div>
+        <div class="icon">
+            <button class="btn">Filters</button>
+        </div>
+        <div class="icon">
+            <button class="btn">Display total before taxes
+
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-53371625/original/b230521e-d33c-4c5e-a2ba-d1d5277ade92.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <a href="#">
+                        <h6>Velhe, Torna-Rajgad, India</h6></a>
+                    <a href="#">
+                        <p>Mountain and pool views </p>
+                    </a>
+                    <a href="#">
+                        <p>19–24 Jan</p>
+                    </a>
+                    <a href="#"><p>₹12,721
+                        night</p> </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-925845752085523547/original/316ffd52-b4a7-4534-8f06-000b5aa99289.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <a href="#"><h6>Kalamb, India</h6> 
+                        </a>
+                    <a href=""><p>65 kilometres away</p></a>
+                    <a href=""><p> 28 Jan – 2 Feb</p></a>
+                    <a href=""><p>₹14,768
+                        night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img style="height: 190px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-47128130/original/619880b9-1db6-4569-99ba-07ac6820f434.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#"><h6>Lonavla, India</h6> 
+                        </a>
+                        <a href="#"><p>69 kilometres away</p></a>
+                        <a href="#"><p>25–30 Jan</p></a>
+                        <a href="#"><p>₹34,234
+                            night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1038970133355880035/original/ece4a91a-20d5-47d9-9199-49259433ecbe.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#"><h6>Panchgani, India</h6> 
+                        </a>
+                        <a href="#"><p>156 kilometres away</p></a>
+                        <a href="#"><p>28 Jan – 2 Feb</p></a>
+                        <a href="#"><p>₹11,412
+                            night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-53371625/original/b230521e-d33c-4c5e-a2ba-d1d5277ade92.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <a href="#">
+                        <h6>Velhe, Torna-Rajgad, India</h6></a>
+                    <a href="#">
+                        <p>Mountain and pool views </p>
+                    </a>
+                    <a href="#">
+                        <p>19–24 Jan</p>
+                    </a>
+                    <a href="#"><p>₹12,721
+                        night</p> </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-925845752085523547/original/316ffd52-b4a7-4534-8f06-000b5aa99289.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <a href="#"><h6>Kalamb, India</h6> 
+                        </a>
+                    <a href=""><p>65 kilometres away</p></a>
+                    <a href=""><p> 28 Jan – 2 Feb</p></a>
+                    <a href=""><p>₹14,768
+                        night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img style="height: 190px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-47128130/original/619880b9-1db6-4569-99ba-07ac6820f434.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#"><h6>Lonavla, India</h6> 
+                        </a>
+                        <a href="#"><p>69 kilometres away</p></a>
+                        <a href="#"><p>25–30 Jan</p></a>
+                        <a href="#"><p>₹34,234
+                            night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1038970133355880035/original/ece4a91a-20d5-47d9-9199-49259433ecbe.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#"><h6>Panchgani, India</h6> 
+                        </a>
+                        <a href="#"><p>156 kilometres away</p></a>
+                        <a href="#"><p>28 Jan – 2 Feb</p></a>
+                        <a href="#"><p>₹11,412
+                            night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-53371625/original/b230521e-d33c-4c5e-a2ba-d1d5277ade92.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <a href="#">
+                        <h6>Velhe, Torna-Rajgad, India</h6></a>
+                    <a href="#">
+                        <p>Mountain and pool views </p>
+                    </a>
+                    <a href="#">
+                        <p>19–24 Jan</p>
+                    </a>
+                    <a href="#"><p>₹12,721
+                        night</p> </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-925845752085523547/original/316ffd52-b4a7-4534-8f06-000b5aa99289.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <a href="#"><h6>Kalamb, India</h6> 
+                        </a>
+                    <a href=""><p>65 kilometres away</p></a>
+                    <a href=""><p> 28 Jan – 2 Feb</p></a>
+                    <a href=""><p>₹14,768
+                        night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img style="height: 190px;" src="https://a0.muscache.com/im/pictures/miso/Hosting-47128130/original/619880b9-1db6-4569-99ba-07ac6820f434.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#"><h6>Lonavla, India</h6> 
+                        </a>
+                        <a href="#"><p>69 kilometres away</p></a>
+                        <a href="#"><p>25–30 Jan</p></a>
+                        <a href="#"><p>₹34,234
+                            night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1038970133355880035/original/ece4a91a-20d5-47d9-9199-49259433ecbe.jpeg?im_w=720"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#"><h6>Panchgani, India</h6> 
+                        </a>
+                        <a href="#"><p>156 kilometres away</p></a>
+                        <a href="#"><p>28 Jan – 2 Feb</p></a>
+                        <a href="#"><p>₹11,412
+                            night</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="showmore">
+            <p>Continue exploring historical homes
+                </p>
+            <button>Show more</button>
+        </div>
+        <div class="footer">
+            <h3>Inspiration for future getaways</h3>
+            <div class="items">
+                <a href="#">Popular</a>
+                <a href="#">Arts and Culture</a>
+                <a href="#">Outdoors</a>
+                <a href="#">Mountaines</a>
+                <a href="#">Beach</a>
+                <a href="#">Unique styles</a>
+                <a href="#">Categories</a>
+                <a href="#">Things to do</a>
+            </div>
+            <hr>
+            <div class="grid">
+                <div class="box1"><h6>Canmore</h6>
+                <p>Apartment rentals</p></div>
+                <div class="box2">
+                    <h6>Benalmádena</h6>
+                    <p>Flat rentals</p>
+                </div>
+                <div class="box3"><h6>Marbella</h6>
+                <p>House rentals</p></div>
+                <div class="box4">
+                    <h6>Mijas</h6>
+                    <p>Flat rentals</p>
+                </div>
+                <div class="box5"><h6>Prescott</h6>
+                <p>Cabin rentals</p></div>
+                <div class="box6">
+                    <h6>scottsdale</h6>
+                    <p>Flatw rentals</p>
+                </div>
+                <div class="box7"><h6>Tucson</h6>
+                <p>Rentals with pools</p></div>
+                <div class="box8"><h6>Jasper</h6>
+                <p>Holiday rentals</p></div>
+                <div class="box9"><h6>Mountain View
+                    </h6><p>Cabin rentals</p></div>
+                <div class="box10"><h6>Devonport
+                    </h6>
+                <p>Cottage rentals</p></div>
+                <div class="box11"><h6>Mallacoota
+                     </h6>
+                <p>Beach house rentals</p></div>
+                <div class="box12"><h6>Ibiza
+                    </h6>
+                <p>Holiday rentals</p></div>
+                <div class="box13"><h6>Anaheim
+                   </h6>
+                <p> Apartment rentals</p></div>
+                <div class="box14"><h6>Monterey
+                    </h6>
+                <p>Cottage rentals</p></div>
+                <div class="box15"><h6>Paso Robles
+                    </h6>
+                <p>House rentals</p></div>
+                <div class="box16"><h6>Santa Barbara
+                    </h6>
+                <p>Flat rentals</p></div>
+                <div class="box17"><h6>Sonoma
+                    </h6>
+                <p>Pet-friendly rentals</p></div>
+                <div class="box18"><a style="text-decoration: none; color: black;" href="#">Show more</a> </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>© 2024 Airbnb, Inc.·PrivacyTermsSitemapCompany details</p>
+            </div>
+
+        </div>
+       
+
+
+
+
+
+
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</body>
+
+</html>
